@@ -1,0 +1,12 @@
+%subtitle {
+  @include font(1.25rem, 600, 1);
+  color: $subtitle-color;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+%title {
+  @include font(3rem, 500, 4.875rem);
+  color: $title-color;
+  font-family: "Poppins", sans-serif;
+}

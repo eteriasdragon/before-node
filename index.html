@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1ea5a4550.js" crossorigin="anonymous"></script>
+    <title>Before Node</title>
+</head>
+<body>
+  <div class = "loader-wrapper">
+    <div class="loader">
+      <div class="loader__inner">
+        <span class="loader__text">Loading</span>
+      </div>
+    </div>
+  </div>
+<header class="header" id="header">
+    <div class="header__inner-container container">
+        <img src="./public/logo.png" alt="" class="header__logo">
+        <div class="header__menu">
+            <nav class="header__nav">
+                <a href="#start-section" class="header__nav-item">
+                    HOME
+                </a>
+                <a href="#service-section" class="header__nav-item">
+                    SERVICES
+                </a>
+                <a href="#about-section" class="header__nav-item">
+                    ABOUT
+                </a>
+                <a href="#work-section" class="header__nav-item">
+                    WORKS
+                </a>
+                <a href="#clients-section" class="header__nav-item">
+                    CLIENTS
+                </a>
+                <a href="#blog-section" class="header__nav-item">
+                    BLOG
+                </a>
+                <a href="#news-section" class="header__nav-item">
+                    NEWS
+                </a>
+                <a href="#signup-section" class="header__nav-item">
+                    CONTACT
+                </a>
+            </nav>
+            <button class="header__sign-btn button">
+                Sign Up
+            </button>
+        </div>
+    </div>
+    <div class="header__scrollbar"></div>
+</header>
+<section class="start-section" id="start-section">
+    <div class="start-section__inner-container container">
+        <div class="start-section__info-block">
+            <p class="start-section__subtitle subtitle">MODERN INTERIOR</p>
+            <h1 class="start-section__heading">
+                Create Your Interior Design.</h1>
+            <p class="start-section__descr descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            <button class="start-section__action-btn button">
+                CONTACT
+            </button>
+        </div>
+        <div class="start-section__img-wrapper img-decor-block">
+            <img src="./main-concept.png" alt="living room" class="start-section__img img-decor-block__img">
+        </div>
+    </div>
+</section>
+<section class="service-section" id="service-section">
+    <div class="service-section__inner-container container">
+        <p class="service-section__subtitle subtitle">WHAT WE DO</p>
+        <h3 class="service-section__title title">Our Service</h3>
+        <ul class="service-section__service-list">
+            <li data-category="all" class="service-section__service-list-item active">ALL</li>
+            <li data-category="designConsultations" class="service-section__service-list-item">Interior Design
+                Consultations
+            </li>
+            <li data-category="resInteriorDesign" class="service-section__service-list-item">Residential Interior
+                Design
+            </li>
+            <li data-category="comInteriorDesign" class="service-section__service-list-item">Commercial Interior
+                Design
+            </li>
+        </ul>
+        <div class="service-section__provisions-list">
+        </div>
+    </div>
+</section>
+<section class="about-section" id="about-section">
+    <div class="about-section__inner-container container">
+        <div class="about-section__img-wrapper img-decor-block">
+            <img src="./about/interior-home.png" alt="living room" class="about-section__img img-decor-block__img">
+        </div>
+        <div class="about-section__main-info">
+            <p class="about-section__subtitle subtitle">ABOUT US</p>
+            <h3 class="about-section__title title">Interioris The Will
+                of An Epoch Mextreo</h3>
+            <p class="about-section__descr descr">There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form injected
+                humour, or randomised words which don't look even slightly
+                believable.If you are going to use a passage of Lorem Ipsum,
+                sure there isn't anything embarrassing hidden the middleof text.
+                All the Lorem Ipsum generators on the Internettend to repeat
+                predefined chunks as necessary,making this the first true
+                generator on the Internet.</p>
+            <button class="about-section__action-btn button">
+                LEARN MORE
+            </button>
+        </div>
+        <div class="about-section__heading">
+            <p class="about-section__heading-years">20</p>
+            <p class="about-section__heading-slogan">Years Of Successful
+                Working
+                The Market</p>
+            <button class="about-section__action-btn button">
+                READ MORE
+            </button>
+        </div>
+        <div class="about-section__img-wrapper img-decor-block">
+            <img src="./about/interior-shelf.png" alt="shelf room" class="about-section__img img-decor-block__img">
+        </div>
+    </div>
+</section>
+<section class="work-section" id="work-section">
+    <div class="work-section__inner-container container">
+        <h3 class="work-section__title title">
+            3000+ Completed Work <br> Which WE have Successfully Done
+        </h3>
+        <div class="work-section__drag-wrapper">
+            <div class="work-section__drag-item drag-item">
+                <p class="drag-item__count">980</p>
+                <p class="drag-item__descr">Project</p>
+            </div>
+            <div class="work-section__drag-item drag-item">
+                <p class="drag-item__count">520</p>
+                <p class="drag-item__descr">Happy Client</p>
+            </div>
+            <div class="work-section__drag-item drag-item">
+                <p class="drag-item__count">330</p>
+                <p class="drag-item__descr">Winners</p>
+            </div>
+            <div class="work-section__drag-item drag-item">
+                <p class="drag-item__count">120</p>
+                <p class="drag-item__descr">Recoment</p>
+            </div>
+            <div class="work-section__svg">
+                <svg class="line" xmlns="http://www.w3.org/2000/svg" width="219" height="98" viewBox="0 0 219 98"
+                     fill="none">
+                    <path class="path" d="M0.99353 1H97.4935V97H218.994" stroke="#E0E0E0" stroke-width="2"/>
+                </svg>
+                <svg class="line" xmlns="http://www.w3.org/2000/svg" width="219" height="97" viewBox="0 0 219 97"
+                     fill="none">
+                    <path class="path" d="M0.99353 96H97.4935V1H218.994" stroke="#E0E0E0" stroke-width="2"/>
+                </svg>
+                <svg class="line" xmlns="http://www.w3.org/2000/svg" width="219" height="108" viewBox="0 0 219 108"
+                     fill="none">
+                    <path class="path" d="M0.99353 1H97.4935V107H218.994" stroke="#E0E0E0" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients-section" id="clients-section">
+    <div class="clients-section__inner-container container">
+        <p class="clients-section__subtitle subtitle">TESTIMONIALS</p>
+        <h3 class="clients-section__title title">Client says about us</h3>
+        <div class="clients-section__slider-control-brns-wrapper">
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+        </div>
+        <div class="swiper clients-section__slider clients-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./public/clients/louis-saville.png" alt="boy" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Louis Saville</span>
+                            /<span class="swiper-slide__company">CEO at Google inc</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your site exudes elegance and professionalism, making it easy to explore your interior
+                            design projects
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/clients/rekha-varadwaz.png" alt="girl" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Rekha Varadwaz</span>
+                            /<span class="swiper-slide__company">Manager at Nike inc</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your modern website design is impressive, showcasing vibrant colors and sleek typography.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/clients/louis-saville.png" alt="boy" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Ethan Johnson</span>
+                            /<span class="swiper-slide__company">Concepts Design Firm</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your website showcases functional and modern spaces with a clean layout and clear
+                            information for visitors.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/clients/rekha-varadwaz.png" alt="girl" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Emily Thompson</span>
+                            /<span class="swiper-slide__company">Elegant Interiors & Co.</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your website's clean design and attention to detail truly reflect your brand, making it a
+                            pleasure to explore your interior design services.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/clients/louis-saville.png" alt="boy" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Benjamin Lee</span>
+                            /<span class="swiper-slide__company">Artistic Spaces Studio</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your website is an artistic masterpiece, reflecting your studio's unique approach to
+                            interior design.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/clients/rekha-varadwaz.png" alt="girl" class="swiper-slide__avatar">
+                    <div class="swiper-slide__text">
+                        <div class="swiper-slide__info">
+                            <span class="swiper-slide__author">Sophia Rodriguez</span>
+                            /<span class="swiper-slide__company">Urban Chic Interiors</span>
+                        </div>
+                        <div class="swiper-slide__review">
+                            Your luxurious website exudes opulence and refinement, attracting high-end clientele seeking
+                            exquisite interior design.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-section" id="blog-section">
+    <div class="blog-section__inner-container container">
+        <p class="blog-section__subtitle subtitle">LATEST NEWS</p>
+        <h3 class="blog-section__title title">From Our Blog</h3>
+        <div class="blog-section__blog-wrapper">
+            <div class="blog-section__blog-post blog-post">
+                <div class="blog-post__img-wrapper img-decor-block">
+                    <img src="./public/blog/blog-trends.png" alt="room" class="blog-post__img img-decor-block__img">
+                </div>
+                <p class="blog-post__title">2020 Interior Design Trends</p>
+                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button class="blog-post__action-btn button">
+                    CONTINUE READING....
+                </button>
+            </div>
+            <div class="blog-section__blog-post blog-post">
+                <div class="blog-post__img-wrapper img-decor-block">
+                    <img src="./public/blog/blog-design.png" alt="room" class="blog-post__img img-decor-block__img">
+                </div>
+                <p class="blog-post__title">2020 Interior Design Trends</p>
+                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button class="blog-post__action-btn button">
+                    CONTINUE READING....
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news-section" id="news-section">
+    <div class="news-section__inner-container container">
+        <p class="news-section__subtitle subtitle">LATEST NEWS</p>
+        <h3 class="news-section__title title">By Wall Street Journal</h3>
+        <div class="news-section__news-wrapper">
+
+        </div>
+    </div>
+</section>
+<section class="signup-section" id="signup-section">
+    <div class="signup-section__inner-container container">
+        <h3 class="signup-section__title title">DON’T forget TO SIGN UP</h3>
+        <p class="signup-section__descr descr">Find out early about all upcoming promotions and new product releases
+            with
+            our newsletter.</p>
+        <form class="signup-section__form signup-form" novalidate>
+            <div class="signup-form__input-wrapper">
+                <label for="firstName"></label>
+                <input id="firstName" type="text" class="signup-form__input" placeholder="Enter your name.....">
+                <div class="signup-form__error-message firstNameError"></div>
+            </div>
+            <div class="signup-form__input-wrapper">
+                <label for="lastName"></label>
+                <input id="lastName" type="text" class="signup-form__input" placeholder="Enter your surname.....">
+                <div class="signup-form__error-message lastNameError"></div>
+            </div>
+            <div class="signup-form__input-wrapper">
+                <label for="email"></label>
+                <input id="email" type="email" class="signup-form__input" placeholder="Enter your e-mail.....">
+                <div class="signup-form__error-message emailError"></div>
+            </div>
+            <button class="signup-form__action-btn button" type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__inner-container container">
+        <div class="footer__info">
+            <div class="footer__company">
+                <img src="./public/logo.png" alt="" class="footer__logo">
+                <p class="footer__slogan">
+                    But i must explain to you all this mistaken idea of dencouncing pleasure.
+                </p>
+            </div>
+            <div class="footer__nav">
+                <div class="footer__nav-list-wrapper">
+                    <p class="footer__list-title">
+                        Quick Links
+                    </p>
+                    <nav class="footer__nav-list">
+                        <a href="#" class="footer__nav-list-item">About Our Company</a>
+                        <a href="#" class="footer__nav-list-item">Services WE provide</a>
+                        <a href="#" class="footer__nav-list-item">Career & Opportunity</a>
+                        <a href="#" class="footer__nav-list-item">Privacy & policy</a>
+                        <a href="#" class="footer__nav-list-item">Contact US</a>
+                    </nav>
+                </div>
+                <div class="footer__nav-list-wrapper">
+                    <p class="footer__list-title">
+                        Company
+                    </p>
+                    <nav class="footer__nav-list">
+                        <a href="#" class="footer__nav-list-item">About Company</a>
+                        <a href="#" class="footer__nav-list-item">Testimonials</a>
+                        <a href="#" class="footer__nav-list-item">Latest News</a>
+                        <a href="#" class="footer__nav-list-item">Our misson</a>
+                        <a href="#" class="footer__nav-list-item">Get a free Quot</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p class="footer__list-title">Contact us</p>
+                <p class="footer__contacts__adress">
+                    Sagrada Familia, Herba Street Front USA
+                </p>
+                <a href="mailto:brandoxide@gmail.com" class="footer__contacts-email">
+                    brandoxide@gmail.com
+                </a>
+                <a href="tel:002-568423591" class="footer__contacts-tel">002-568423591</a>
+            </div>
+            <div class="footer__social">
+                <p class="footer__list-title">Follow Us</p>
+                <div class="footer__social-networks-list">
+                    <a target="_blank" href="https://www.facebook.com/" class="footer__social-networks-list-item">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/" class="footer__social-networks-list-item">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" class="footer__social-networks-list-item">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/" class="footer__social-networks-list-item">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright"></p>
+    </div>
+</footer>
+<div class="portal">
+    <div class="portal__modal-window">
+        <p class="portal__modal-content">Are you still here?</p>
+        <button class="portal__modal-btn approve-btn">Yes</button>
+    </div>
+</div>
+  <div class="congrats">
+      <div class="happy">🥳</div>
+      <div class="pop">🎉</div>
+      <div class="pop">🎉</div>
+      <div class="pop">🎉</div>
+      <p>Only for users with name "Sigma" today, ${todayFormatted}, we have 120% discount!!!</p>
+      <div class="pop-2">🎉</div>
+      <div class="pop-2">🎉</div>
+      <div class="pop-2">🎉</div>
+      <div class="pop-3">🎉</div>
+      <div class="pop-3">🎉</div>
+      <div class="pop-3">🎉</div>
+  </div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.about-section {
+  &__inner-container {
+    @include flex(space-between);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(300px, 700px));
+    row-gap: 150px;
+    flex-wrap: wrap;
+    padding-bottom: 250px;
+  }
+
+  &__img-wrapper {
+    flex: 1 1 45%;
+    max-height: 700px;
+    & img {
+      width: 95%;
+      height: 95%;
+    }
+
+    &:nth-child(1) {
+      &:after {
+        left: -30px;
+        top: -30px;
+      }
+    }
+    &:nth-child(4) {
+      &:after {
+        right: 0;
+        top: 75px;
+      }
+    }
+  }
+
+  &__main-info {
+    flex: 1 1 40%;
+    max-width: 550px;
+  }
+
+  &__descr {
+    margin-bottom: 50px;
+  }
+
+  &__action-btn {
+    width: 140px;
+    height: 40px;
+  }
+
+  &__heading {
+  }
+
+  &__heading-years {
+    @include font(18rem, 700, 1);
+    margin-top: 100px;
+    font-size: 288px;
+    -webkit-background-clip: text;
+    background-image: url("./blog/blog-trends.png");
+    background-size: 150%;
+    background-position: 20% 100%;
+    color: transparent;
+    background-clip: text;
+  }
+
+  &__heading-slogan {
+    @include font(3.125rem, 500, 4.0625rem);
+    font-family: "Poppins", sans-serif;
+    color: $title-color;
+    letter-spacing: 0.125rem;
+    margin-bottom: 20px;
+  }
+
+}

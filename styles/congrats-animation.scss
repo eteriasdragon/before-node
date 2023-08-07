@@ -1,0 +1,114 @@
+.congrats {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  background: linear-gradient(-160deg, #11e856, #ff0281, #256aea, #692d79);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+
+  & p {
+    @include font(3rem, 700, 5rem);
+    position: absolute;
+    width: 1000px;
+    left: calc(50% - 500px);
+    top: 30%;
+    color:#ffffff;
+    text-align: center;
+  }
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.happy {
+  font-size: 48px;
+  position: absolute;
+  animation-name: celebrating;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes celebrating {
+  from {
+    top: 0;
+    bottom: 0;
+  }
+  to {
+    top: 100%;
+    bottom: 100%;
+  }
+}
+
+.pop {
+  font-size: 48px;
+  position: absolute;
+  animation-name: popping;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes popping {
+  from {
+    top: 0;
+    right: 0;
+  }
+  to {
+    top: 100%;
+    right: 100%;
+  }
+}
+.pop-2 {
+  font-size: 48px;
+  position: absolute;
+  animation-name: popping-2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes popping-2 {
+  from {
+    top: 20%;
+    left: 20%;
+    right:20%;
+  }
+  to {
+    top: 70%;
+    left: 70%;
+    right: 70%;
+  }
+}
+
+.pop-3 {
+  font-size: 48px;
+  position: absolute;
+  animation-name: popping-3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes popping-3 {
+  from {
+    left: 0;
+    right:0;
+  }
+  to {
+    left: 100%;
+    right: 100%;
+  }
+}

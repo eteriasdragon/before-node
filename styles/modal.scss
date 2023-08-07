@@ -1,0 +1,40 @@
+.portal {
+  @include flex(center, center);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.79);
+  z-index: 100;
+  display: none;
+  &.visible {
+    display: flex;
+  }
+
+  &__modal-window {
+    @include flex(center, center, column);
+    gap: 40px;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 40px 0;
+  }
+
+  &__modal-content {
+    @include font(2.125rem, 400, 1);
+  }
+
+  &__modal-btn {
+    @include font(1.125rem, 600, 1);
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.42);
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 0 0 8px 3px rgba(45, 45, 45, 0.42);
+    }
+  }
+}

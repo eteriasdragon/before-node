@@ -1,0 +1,62 @@
+.news-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  &__inner-container {
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__news-wrapper {
+    @include flex(space-between);
+    gap: 40px;
+  }
+
+}
+
+.news-post {
+  width: 300px;
+
+  &__img {
+    width: 100%;
+    height: 180px;
+    border-radius: 40px 0;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    @include font(1.5rem, 700, 2.5rem);
+  }
+
+  &__descr {
+    @include font(1.125rem, 400, 1.5rem);
+    color: $subtitle-color;
+    margin-bottom: 10px;
+  }
+
+  &__cred {
+    @include font(1rem, 600, 1);
+    margin-bottom: 15px;
+  }
+
+  &__author {
+    color: $subtitle-color;
+  }
+
+  &__date {
+    color: $main-green;
+  }
+
+  &__action-btn {
+    @include flex(center, center);
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

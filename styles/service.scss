@@ -1,0 +1,56 @@
+.service-section {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__service-list {
+    @include flex(flex-start);
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  &__service-list-item {
+    @include font(1rem, 700, 1rem);
+    @include flex(center, center);
+    border-radius: 20px;
+    background: #37806B;
+    color: #fff;
+    padding: 0 10px;
+    max-width: 280px;
+    height: 40px;
+    transition: .3s;
+    border: 5px solid transparent;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      width: 110px;
+    }
+
+    &.active, &:hover  {
+      border: 5px solid #37806B;
+      background: #FFF;
+      color: $main-green;
+    }
+
+  }
+
+  &__provisions-list {
+    @include flex(space-around);
+    flex-wrap: wrap;
+    gap: 30px;
+    min-height: 470px;
+  }
+
+  &__provision-item {
+    @include flex(flex-start);
+    padding: 30px 15px 30px 30px;
+    gap: 20px;
+    flex: 1 1 30%;
+    max-width: 400px;
+    height: 130px;
+    max-height: min-content ;
+  }
+
+}

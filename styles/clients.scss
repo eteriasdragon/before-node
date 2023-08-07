@@ -1,0 +1,117 @@
+.clients-section {
+  padding-top: 130px;
+  padding-bottom: 145px;
+  max-height: 650px;
+  box-sizing: border-box;
+  &__inner-container {
+    position: relative;
+  }
+
+  &__subtitle,  &__title {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+  }
+}
+
+.swiper-wrapper {
+  width: 1000px !important;
+  padding-bottom: 50px;
+}
+
+.clients-slider {
+  & .swiper-slide {
+    display: flex !important;
+    border-radius: 70px 0;
+    background: #FFF;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    width: 540px !important;
+    height: 200px !important;
+    box-sizing: border-box;
+    padding: 40px 32px 40px 0;
+    position: relative;
+    margin-left: 100px;
+
+    &::after {
+      @include font(6rem, 700, 1);
+      content: "”";
+      color: #B0855B;
+      font-family: "Basic Sans SF", sans-serif;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    &__avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 35px 0;
+      position: absolute;
+      left: -65px;
+    }
+
+    &__info {
+      margin-bottom: 10px;
+      margin-left: 80px;
+    }
+
+    &__info,  &__company {
+      @include font(1rem, 400, 1);
+      color: $subtitle-color;
+    }
+
+    &__author {
+      @include font(1.5rem, 700, 1);
+      color: $title-color;
+    }
+
+    &__review {
+      @include font(1.125rem, 400, 1.75);
+      color: $subtitle-color;
+      margin-left: 80px;
+    }
+  }
+}
+
+
+.clients-section__slider-control-brns-wrapper {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  top: 23%;
+  right: 55px;
+
+  & .swiper-button, .swiper-button-prev, .swiper-button-next {
+    text-align: center;
+    width: 34px !important;
+    height: 34px !important;
+    background-color: #FFF;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.30);
+    border-radius: 50%;
+    transition: .3s;
+
+    &:hover {
+      background-color: #37806B;
+      &:after {
+        color: #fff;
+      }
+    }
+
+    &:after {
+      position: relative;
+      font-size: 16px !important;
+      font-weight: 700;
+      color: $subtitle-color;
+    }
+
+  }
+
+  .swiper-button-next {
+    &:after {
+      left: 2px;
+    }
+  }
+
+}

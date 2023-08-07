@@ -1,0 +1,72 @@
+.header {
+  height: 120px;
+  @include flex(center, center);
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  background-color: #fff;
+  margin-bottom: 20px;
+
+  &__scrollbar {
+    width: 0;
+    max-width: 100%;
+    height: 5px;
+    background-color: $main-green;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    transition: .4s ease-out;
+  }
+
+  &__inner-container {
+    @include flex(space-between, center);
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    @include flex(space-between, center);
+    flex: 0 1 55%;
+  }
+
+  &__nav {
+    @include flex(space-between, center);
+    flex: 0 1 80%;
+    height: 50px;
+  }
+
+  &__nav-item {
+    @include font(1rem, 600, 1);
+    @include flex(center, center);
+    color: $inactive-link-color;
+    text-transform: uppercase;
+    height: 50px;
+    border: 5px solid transparent;
+    border-radius: 1.25rem;
+    padding: 0 7px;
+    box-sizing: border-box;
+    transition: .3s;
+
+    &:hover {
+      border: 5px solid #37806B;
+      background: #FFF;
+      color: $main-green;
+    }
+
+  }
+
+  &__sign-btn {
+    width: 6rem;
+    height: 2rem;
+    color: #fff;
+    border-radius: 0.9375rem 0;
+    background: #CAA892;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+  }
+
+}
