@@ -10,11 +10,10 @@ import './scripts/drag-and-drop/draggable.js';
 import './scripts/common/close-window.js';
 import './scripts/news/getNews';
 
-const loader = document.querySelector('.loader-wrapper');
-
 window.addEventListener('load', showLoader);
 
 function showLoader() {
+  const loader = document.querySelector('.loader-wrapper');
   document.body.style.overflow = 'hidden';
   setTimeout(() => {
     loader.remove();

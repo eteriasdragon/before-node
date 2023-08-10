@@ -1,11 +1,12 @@
 .congrats {
+  @include flex(center, center);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
   position: absolute;
-  z-index: 10000;
+  overflow: hidden;
+  z-index: 100;
   background: linear-gradient(-160deg, #11e856, #ff0281, #256aea, #692d79);
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;

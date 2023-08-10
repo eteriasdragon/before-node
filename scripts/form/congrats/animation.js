@@ -3,11 +3,10 @@ export function showCongrats() {
   const date = new Date();
   const year = date.getFullYear();
   const month = date.getMonth() + 1;
-  const day = date.getDay() - 1;
-  const todayFormatted = `${day < 10 ?  '0' + day : day}.${month < 10 ?  '0' + month : month}.${year}`;
-
+  const day = date.getDate();
+  const todayFormatted = `${day < 10 ?  `0${day}` : day}.${month < 10 ?  '0' + month : month}.${year}`;
   const animationWrapper = document.createElement('div');
-  const page = document.querySelector('body');
+  const formSection = document.querySelector('.signup-section');
   animationWrapper.classList.add('congrats');
   animationWrapper.insertAdjacentHTML('beforeend', `    <div class="happy">🥳</div>
     <div class="pop">🎉</div>
@@ -20,13 +19,9 @@ export function showCongrats() {
     <div class="pop-3">🎉</div>
     <div class="pop-3">🎉</div>
     <div class="pop-3">🎉</div>`);
-  page.append(animationWrapper);
-  page.style.height = "100%";
-  page.style.overflow = "hidden";
+  formSection.append(animationWrapper);
 
   setTimeout(() => {
-    page.querySelector('.congrats').remove();
-    page.style.height = "100%";
-    page.style.overflow = "auto";
+    formSection.querySelector('.congrats').remove();
   }, 5000)
 }
